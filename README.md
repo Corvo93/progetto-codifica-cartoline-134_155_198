@@ -1,1 +1,2 @@
-# progetto-codifica-cartoline-134_155_198
+Progetto di esame del corso Codifica di Testi realizzato da Lorenzo Cecio (matricola 544914) e Alessandro Belli (matricola 577854). 
+Le cartoline analizzate sono le seguenti: 7694-134; 7694-155; 7694-198.
