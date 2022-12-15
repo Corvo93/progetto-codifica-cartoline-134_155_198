@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Body flex con testo centrato */
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #CAD6EB;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+main{
+    margin-top: 2.5em;
+}
+
+/* Navbar sticky con sfondo opaco */
+header {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1em;
+    background-color: #CAD6EB;
+    border-bottom: 1.5px solid black;
+}
+
+.view, #intro_link, #about_link {
+    background-color: #FAF9F7;
+}
+
+/* Bottoni navbar */
+header a {
+    flex-grow: 1;
+    color: black;
+    padding: 1%;
+    margin: 1px;
+    border: 1.5px solid black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: large;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    background-color: #F0EFED;
+    color: black;
+    cursor: pointer;
+}
+
+header a.active {
+    background-color: #E0E0DE;
+}
+
+/* Header con spiegazione del progetto */
+#intro {
+    padding: 1.5%;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titolo cartolina */
+h3 {
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+    font-size:large;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-family: 'Roboto', sans-serif;
+}
+/* Bottoni fronte-retro */
+.radio_holder {
+    padding-bottom: 1%;
+    align-items: center;
+}
+
+#legenda {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: start;
+    display: inline-block;
+    width:50%;
+    background-color: #FAF9F7;
+    padding: 1em;
+    padding-top: 0!important;
+    border-radius: 0.7em;
+    box-shadow: -1.5px 4.5px 3.5px #A7B9D9;
+}
+#simboli {
+    margin-top: 2%;
+    display: block;
+    text-align: center;
+}
+/* Div con cartolina e testo a fianco */
+p {
+	margin: 0px;
+}
+
+.f_r_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Div immagine cartolina */
+.img_c {
+    width: 22em;
+}
+
+
+.text_c{
+    width: 50%;
+    height: 400px;
+    overflow:auto;
+    background-color: #FAF9F7;
+    padding: 1em;
+    padding-top: 0!important;
+    border-radius: 0.7em;
+    box-shadow: -1.5px 4.5px 3.5px #A7B9D9;
+}
+
+/* Scroll bar */
+.text_c::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+  
+  /* Handle */
+.text_c::-webkit-scrollbar-thumb {
+    background: #A7B9D9;
+    border-radius: 1em;
+}
+  
+  /* Handle on hover */
+.text_c::-webkit-scrollbar-thumb:hover {
+background: #8492AB;
+}
+
+.desc_fronte, .desc_retro {
+    display: flex;
+    /*margin: 1% 1% 1% 3%;*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.c_holder, img, .text_fronte, .text_retro {
+    display: none;
+    width: 100%;
+}
+
+.c_holder {
+	border-top: 1.5px solid black;
+}
+
+.zona_cartolina {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 2em; 
+}
+
+/* Footer */
+footer {
+	border-top: 1.5px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5%;
+    margin-top: 1.5%;
+}
+
+.footer_text {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.edizione {
+    width: 50%;
+}
+
+.pubblicazione {
+    width: 50%;
+}
+
+/* Proprietà generali */
+.visible {
+    display: initial;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+
+    .f_r_holder, header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .img_c, .info_c {
+        width: 100%;
+    }
+}
